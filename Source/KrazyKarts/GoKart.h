@@ -60,9 +60,13 @@ private:
 	FVector GetRollingResistance();
 	UFUNCTION()
 	void OnRep_ReplicatedTransform();
+
+	UPROPERTY(Replicated)
 	FVector Velocity;
 
+	UPROPERTY(Replicated)
 	float Throttle;
+	UPROPERTY(Replicated)
 	float SteeringThrow;
 
 	/*UPROPERTY(replicated)
