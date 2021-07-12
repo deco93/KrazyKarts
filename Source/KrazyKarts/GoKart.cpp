@@ -18,8 +18,8 @@ AGoKart::AGoKart()
 void AGoKart::BeginPlay()
 {
 	Super::BeginPlay();
-	/*if (HasAuthority())
-		NetUpdateFrequency = 1;*/
+	if (HasAuthority())
+		NetUpdateFrequency = 1;
 }
 
 
